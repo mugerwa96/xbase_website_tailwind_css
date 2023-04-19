@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/output.css" rel="stylesheet">
+    <!-- fontawesome -->
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- alpine js -->
+
+    <script src="./src/alpine.min.js"></script>
+</head>
+
+<body class="antialiased text-gray-900 bg-gray-100 min-h-screen   " >
+
+    <div class="relative h-20" x-data="{open:true} ">
+
+        <!-- Navigation__bar -->
+        <div class="bg-black text-white absolute z-20 w-full">
+            <!-- flex__container -->
+            <div class="flex justify-between p-4 text-2xl ">
+                <!-- left__side -->
+                <div>
+                    <p class="font-bold ">Boss</p>
+                </div>
+                <!-- right__side -->
+                <div>
+                    <i class="fas fa-headphones" @click="open=!open"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Navigation__bar -->
+    
+        <!-- menu__items -->
+        <div class="bg-white shadow-xl absolute z-10  transform w-full  duration-700 ease-in-out text-center flex flex-col  justify-center "
+         :class="{'-translate-y-[100%]':open==false,'translate-y-10':open==true} ">
+            
+            <ul class="space-y-4  p-2 my-6">
+                <li>
+                    <a href="#" class="text-black block font-semibold hover:text-black rounded-sm ">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-600 block font-semibold hover:text-black rounded-sm ">About</a>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-600 block font-semibold hover:text-black rounded-sm ">Gallery</a>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-600 block font-semibold hover:text-black rounded-sm ">Subscribe</a>
+                </li>
+            </ul> 
+    
+            <!-- bottom__section -->
+            <div class="bg-gradient-to-r from-black to-white block p-2">
+                    <button class="p-2 font-semibold bg-white">Buy Now:Ugx:200,000</button>
+            </div>
+        </div>
+
+        
+        
+    </div>
+
+<!-- header__sectin -->
+<div class="flex justify-center  items-center tranform duration-700 " :class="{'translate-y-56':open==true,'translate-y-0':open==false}" >
+    <!-- flex__container -->
+    <div>
+        <h1>Our Best head phones yet</h1>
+        <p>QuietComfort* 35 Wireless Headphones</p>
+    </div>
+</div>
+
+</body>
+
+</html>

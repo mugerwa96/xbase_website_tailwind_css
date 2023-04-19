@@ -1,0 +1,343 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/output.css" rel="stylesheet">
+    <!-- fontawesome -->
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- alpine js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body class="antialiased text-gray-900  h-screen     ">
+
+    <div class="relative h-16 " x-data="{open:false} ">
+
+        <!-- Navigation__bar -->
+        <div class="bg-black text-white absolute z-20 md:z-0 w-full ">
+
+            <div class="md:flex md:justify-center">
+                <div class="md:w-[80%] md:flex   ">
+                    <!-- flex__container -->
+                    <div class="flex justify-between p-4 text-2xl md:p-2  md:w-full md:items-center   ">
+                        <!-- left__side -->
+                        <div>
+                            <p class="font-bold md:text-2xl ">Base</p>
+                        </div>
+
+                        <!-- menu__web -->
+                        <div class="hidden md:block">
+                            <ul class="space-y-4  p-4 md:flex md:space-y-0 md:space-x-4  ">
+                                <li>
+                                    <a href="#" class="text-white text-base font-semibold ">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white text-base font-semibold ">About</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white text-base font-semibold ">Gallery</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-white text-base font-semibold ">Subscribe</a>
+                                </li>
+                                <button class="p-2 font-semibold  bg-white text-black rounded-md text-sm">Buy Now:
+                                    Ugx:200,000</button>
+                            </ul>
+                        </div>
+
+
+                        <!-- right__side -->
+                        <div class="md:hidden">
+                            <i class="fas fa-headphones cursor-pointer " @click="open=!open"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- Navigation__bar -->
+
+        <!-- menu__items -->
+        <div class="bg-gray-100
+        shadow-xl  z-10  h-screen  w-[60%] 
+         duration-700 ease-in-out  flex 
+         flex-col 
+         text-opacity-20
+         transform
+       
+         " :class="{'-translate-x-full':open==false,'translate-x-0':open==true}">
+
+            <ul class="space-y-4  p-4  absolute top-20">
+                <li>
+                    <a href="#" class="text-black block font-semibold hover:text-black rounded-sm ">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-500 block font-semibold hover:text-black rounded-sm ">About</a>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-500 block font-semibold hover:text-black rounded-sm ">Gallery</a>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-500 block font-semibold hover:text-black rounded-sm ">Subscribe</a>
+                </li>
+                <button class="p-2 font-semibold  bg-black text-white rounded-md text-sm">Buy Now: Ugx:200,000</button>
+            </ul>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <!-- hero__section -->
+
+
+    <!-- flex__container -->
+    <div class="flex flex-col 
+     text-white p-4 justify-center text-center space-y-5
+     bg-[url('https://images.unsplash.com/photo-1599669454515-1b2e0173f302?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80')] 
+     bg-cover  h-[70%]
+      ">
+        <h1 class="text-2xl font-bold uppercase md:text-4xl ">Our Best <br> head phones yet.</h1>
+        <p>QuietComfort* 35 Wireless Headphones</p>
+        <div>
+            <button class="px-2 py-1 bg-white w-[50%] text-black font-bold rounded-full md:w-fit md:px-4">view
+                Details</button>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- detail -->
+    <div class="p-4 text-center space-y-4 md:flex md:justify-center  ">
+
+        <div class="md:w-1/2 md:space-y-4">
+            <!-- sub__heading -->
+            <div class=" flex justify-center">
+                <div class="w-1/2">
+                    <p class="font-bold text-base md:text-xl ">World-class noise cancellation</p>
+                </div>
+            </div>
+
+            <!-- heading -->
+            <h1 class="text-3xl font-bold text-black md:text-4xl">Wirelessly</h1>
+
+            <!-- description -->
+            <p class="text-sm text-left  md:text-center  md:text-[14px] ">
+                Technics Wireless Noise Cancelling Headphones, High-Fidelity Bluetooth Headphones with Multi-Point
+                Connectivity, Impressive Call Quality, and Comfort Fit - EAH-A800-S Silver
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- headphone__image -->
+    <div class="p-4 md:flex md:justify-center md:my-5">
+
+        <div class="md:w-[80%]">
+
+            <!-- flex__container -->
+            <div class="flex flex-col  justify-center space-y-5 md:flex-row  md:justify-center">
+                <!-- left__side -->
+                <div class="flex justify-center">
+                    <div class="w-[60%]">
+
+                        <img src="https://m.media-amazon.com/images/I/71P36mwxA4L._AC_SL1500_.jpg" class="" alt="">
+                    </div>
+                </div>
+                <!-- right__side -->
+                <div class="space-y-5 md:space-y-10">
+                    <h4 class="font-bold text-black text-xl md:text-3xl">Built for your life .</h4>
+                    <p class="text-sm md:text-[18px] ">
+                        Technics Wireless Noise Cancelling Headphones, High-Fidelity Bluetooth Headphones with
+                        Multi-Point Connectivity, Impressive Call Quality, and Comfort Fit - EAH-A800-S Silver
+                    </p>
+                    <div>
+                        <button class="px-2 py-1  bg-black w-[50%] text-white font-bold rounded-full ">view
+                            Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- iphone__sectioon -->
+    <div class="p-4  md:p-0">
+
+
+        <!-- flex__container -->
+        <div class="bg-black p-4 text-white space-y-8  flex  flex-col justify-center 
+        
+    md:items-center
+    md:p-10
+    ">
+            <div class="md:w-[80%]  md:flex md:justify-center ">
+
+                <!-- left__side -->
+                <div class="space-y-8 md:w-[50%] md:justify-center md:items-center">
+                    <h1 class="font-bold text-2xl md:text-4xl">Get the most out of your headphones</h1>
+                    <p class="text-sm md:text-[14px] ">
+                        Technics Wireless Noise Cancelling Headphones, High-Fidelity Bluetooth Headphones with
+                        Multi-Point Connectivity, Impressive Call Quality, and Comfort Fit - EAH-A800-S Silver
+                    </p>
+                    <div>
+                        <button class="px-2 py-1  uppercase bg-white w-[50%] text-black font-bold rounded-full ">view
+                            Details</button>
+                    </div>
+                </div>
+
+                <!-- right__side -->
+                <div class="md:w-[50%] ">
+                    <img src="./images/iphone.png" class="md:w-[50%]" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- follow__section -->
+
+    <section id="follow" class="p-4 md:py-6">
+
+     
+        
+        <div class="flex justify-center">
+
+            <!-- flex__container -->
+            <div class="flex flex-col justify-center md:w-[80%]   md:flex-row md:justify-center md:items-center md:space-x-4  md:space-y-8">
+                <!-- left__side -->
+                <div class="md:w-[10%]">
+                        <img src="https://images.unsplash.com/photo-1599669454515-1b2e0173f302?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        class="w-20 h-20 rounded-full"
+                        alt="">
+                </div>
+                <!-- right__side -->
+                <div class="space-y-4 md:w-[50%]">
+                        <!-- button__section -->
+                        <div class="flex  items-center space-x-2">  
+    
+    
+                            <h1 class="">
+                                <span>
+                                    base
+                                </span>
+                                <span>
+                                    <i class="fas fa-sun  text-blue-700"></i>
+                                </span>
+                            </h1>
+                            <div class="">
+    
+                                <button class="p-1 bg-blue-600 w-full  text-white font-bold">Follow</button>
+                            </div>
+                        </div>
+                        <!-- following -->
+                        <div class="flex items-center space-x-3">
+                            <div class="flex items-center justify-center space-x-2">
+                                <p class="font-bold">1000</p>
+                                <p class="text-sm">messages</p>
+                            </div>
+                            <div class="flex items-center justify-center space-x-2">
+                                <p class="font-bold">100</p>
+                                <p class="text-sm">followers</p>
+                            </div>
+                            <div class="flex items-center justify-center space-x-2">
+                                <p class="font-bold">230</p>
+                                <p class="text-sm">following</p>
+                            </div>
+                        </div>
+                        
+                        <!-- detaills -->
+                        <div>
+                            <p class="text-sm">Technics Wireless Noise Cancelling Headphones, High-Fidelity Bluetooth Headphones with Multi-Point
+                                Connectivity, Impressive Call Quality, and Comfort Fit - EAH-A800-S Silver</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- follow__section -->
+
+
+
+
+    <!-- bootom -->
+    <div>
+        <!-- /flex__container -->
+        <div class="flex flex-col md:flex-row md:justify-center p-4 ">
+
+
+            <div class="md:flex md:w-[70%]   md:space-x-4">
+
+                <!-- left__side -->
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1600086827875-a63b01f1335c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                        alt="">
+                </div>
+                <!-- right__side -->
+                <div class="md:w-1/2">
+
+
+
+
+                    <!-- flex__container -->
+                    <div class="flex items-center   ">
+                        <!-- left__Side -->
+                        <div class="w-[20%]">
+                            <img src="https://images.unsplash.com/photo-1599669454515-1b2e0173f302?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                class="h-[3rem] w-[3rem] rounded-full bg-contain" alt="">
+                        </div>
+                        <!-- right__side -->
+
+
+                        <div class=" w-[80%]">
+                            <!-- flex__container -->
+                            <div class="flex flex-col my-5 justify-center  ">
+                                <!-- left__side -->
+                                <div>
+                                    <h1>
+                                        <span>
+                                            base
+                                        </span>
+                                        <span>
+                                            <i class="fas fa-sun  text-blue-700"></i>
+                                        </span>
+                                    </h1>
+                                </div>
+                                <!-- right__side -->
+                                <div>
+                                    <button class="p-1 bg-blue-600 w-full  text-white font-bold">Follow</button>
+                                </div>
+                            </div>
+                            <p class="text-sm">
+                                <span>Base</span> Wireless freedom.Noise cancellation.Love at first sight.
+                                <span class="">
+                                    <a href="" target="_blank" class="text-blue-800">
+                                        Base headphones
+                                    </a>
+                                </span>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
